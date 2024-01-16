@@ -29,3 +29,38 @@ switch (userType) {
 }
 
 console.log("User Category:", userCategory);
+
+//Use ternary operator for 
+//isAuthenticated and authenticationStatus
+let isAuthenticated = true;
+
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+//Practice
+let userStatus = "Enrolled Member";
+let dietaryServices = false;
+let full = false;
+let oneOnOne = false;
+
+switch (userStatus) {
+    case "Employee":
+        dietaryServices = true;
+        full = true;
+        break;
+    
+    case "Enrolled Member":
+        dietaryServices = true;
+        oneOnOne = true;
+        full = true;
+        break;
+
+    case "Subscriber":
+        dieteryServices = true
+        break;
+}
+
+console.log("You are entitled to: " +
+  (full ? "Partial " : "") +
+  (dietaryServices ? "Dietary Services," : "") +
+  (oneOnOne ? " One-on-One interaction with a dietician" : "")
+);
